@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "es5",
+      "module": "commonjs",
+      "strict": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "moduleResolution": "node",
+      "baseUrl": "./",
+      "paths": {
+        "ui-library": ["packages/ui-library/src"],
+        "demo/*": ["packages/demo/src/*"]
+      }
+    },
+    "include": ["packages/ui-library/src", "packages/demo/src"]
+  }
+  

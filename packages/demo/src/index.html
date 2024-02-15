@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Counter</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="count">0</h1>
+  <button id="addButton">Add</button>
+
+  <script>
+    // Function to handle button click event
+    function handleButtonClick() {
+      // Increment the count
+      count++;
+      // Update the count in the UI
+      document.getElementById('count').textContent = count;
+      // Log the state change event
+      console.log('State changed:', count);
+    }
+
+    // Global variable to store the count
+    let count = 0;
+
+    // Add event listener to the button
+    document.getElementById('addButton').addEventListener('click', handleButtonClick);
+
+    // Log the component mount event
+    console.log('Component mounted');
+  </script>
+</body>
+</html>
